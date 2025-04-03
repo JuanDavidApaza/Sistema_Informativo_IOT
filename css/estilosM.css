@@ -1,0 +1,300 @@
+
+/*titulo*/
+.titulo{
+    font-size: 70px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.frase{
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/*---------------PRIMERA PARTE -----------*/
+.subtitulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 100px;
+    font-size: 50px;
+    margin: 40px ;
+    color: #333;
+    text-align: center;
+    margin: 60px;
+    
+}
+
+/*imagen 1*/
+
+.primerap img{
+    
+    width: 600px;
+    height: 330px;
+    border-radius: 7px;
+    float: right;
+    border: 3px solid black;
+    margin: 0px 50px;
+}
+
+/*Primer parrafo*/
+.p1{
+    line-height: 1.1;
+    font-size:22px;
+    margin: 60px ;
+    text-align: justify;
+}
+
+
+
+/*Segundo parrafo*/
+.p2{
+    line-height: 1.5;
+    font-size:22px;
+    margin: 60px;
+}
+
+/*Segunda imagen*/
+img{
+    line-height: 50px;
+    width: 1020px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+
+}
+
+/*---------------SEGUNDA PARTE -----------*/
+
+/*Subtitulo 2*/
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 40px;
+    color: #333;
+}
+
+/*Viñetas*/
+li{
+    line-height: 1.5;
+    font-size:21px;
+    margin: 25px 0px 5px 45px;
+    color: #262626;
+    
+    
+
+}
+
+/*Subtitulo 1*/
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 40px;
+    color: #333;
+}
+
+/*Viñetas 2*/
+.v2{
+    line-height: 1.5;
+    font-size:21px;
+    color: #262626;
+    margin: 20px 70px 20px 40px;
+    text-align: justify;
+}
+
+
+.segundaparte{
+    background: rgb(241, 248, 248);
+}
+
+
+/*---------------TERCERA PARTE -----------*/
+
+/*Tercer parrafo*/
+.p3{
+    line-height: 1.5;
+    font-size:22px;
+    margin: 20px 70px 20px 40px;
+    text-align: justify;
+}
+/*Imagen 3*/
+.tercerap img{
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin: 0px 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.tercerap{
+    font-size: 20px;
+    margin: 50px 30px 8px 110px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkcyan;
+    
+}
+
+
+
+.p5{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    font-size:22px;
+    margin: 5px 70px 60px 110px;
+    text-align: justify;
+
+    
+    
+}
+
+.p4{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    font-size: 22px;
+    margin: 20px 70px 20px 40px;
+    text-align: justify;
+}
+
+
+/*---------------CUARTA PARTE -----------*/
+
+.bibliografia{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 40px;
+    color: #333;
+    background-color:rgb(222, 226, 226);
+    border: 20px solid rgb(222, 226, 226);
+
+}
+
+
+/*--------------- NAVEGACIÓN-INICIO_DESPEGABLE -----------*/
+
+.imagen-ligth {position: fixed;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+
+.imagen-inicio {
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s; 
+
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    
+}
+
+.menu-navegacion{
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to right, #79d9f7 0%, #ba7eeb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(48, 208, 208, 0.507);
+}
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: azure;
+    text-decoration: none;
+    
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.507) 0%, rgba(182, 131, 245, 0.507) 100%), url(../images/medicina2.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
