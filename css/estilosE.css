@@ -174,13 +174,6 @@ header{
 
 }
 
-/*clases para los casos*/
-li{
-    font-size: 40px;
-    font-family: 'Roboto Slab', serif;
-    color: darkgreen;
-}
-
 .parrafos{
     padding: 20px 0px 20px 0px;
 }
@@ -190,25 +183,6 @@ li{
     display: flex;
 }
 
-/* Footes */
-
-footer{
-    background: lightgreen;
-    padding-bottom: 0.1px;
-}
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-.contact-us{
-    width: 40%;
-    color: aliceblue;
-}
 
 .brand{
     font-weight: 500;

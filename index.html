@@ -1,251 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/IoT.png" />
-    <title>IoT Inicio</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <div id="header"></div>
-<script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="images/IoT.png" />
+  <title>IoT Inicio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+  <script>
     fetch("componentes/encabezado.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-</script>
-    <!-- /Header -->
-    <!-- Main -->
-    <main id="main">
-      <div
-        id="carouselPrincipal"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/agricultura.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6 col-lg-4 offset-3 offset-lg-4">
-                    <h3>En la Agricultura</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/medicina.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6 col-lg-4 offset-3 offset-lg-4">
-                    <h3>En la Medicina</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/educacion.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6 col-lg-4 offset-3 offset-lg-4">
-                    <h3>En la Educación</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/transporte.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6 col-lg-4 offset-3 offset-lg-4">
-                    <h3>En el Transporte</h3>
-                  </div>
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+  <!-- /Header -->
+  <!-- Main -->
+  <main id="main">
+    <div id="carouselPrincipal" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/agricultura.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-4 offset-3 offset-lg-4">
+                  <h3>En la Agricultura</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselPrincipal"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselPrincipal"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+        <div class="carousel-item">
+          <img src="images/medicina.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-4 offset-3 offset-lg-4">
+                  <h3>En la Medicina</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/educacion.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-4 offset-3 offset-lg-4">
+                  <h3>En la Educación</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/transporte.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-4 offset-3 offset-lg-4">
+                  <h3>En el Transporte</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    <div id="textoIoT" class="container pb-4 pt-4">
-      <div class="row">
-        <div class="col-12 col-lg-8">
-          <h1>IoT-Internet de las Cosas</h1>
-          <h4>Descripción general del IoT</h4>
-          <p>
-            El Internet de las cosas (IoT) es el proceso que permite conectar
-            elementos físicos cotidianos al Internet: desde objetos domésticos
-            comunes, como las bombillas de luz, hasta recursos para la atención
-            de la salud, como los dispositivos médicos; también abarca prendas y
-            accesorios personales inteligentes e incluso los sistemas de las
-            ciudades inteligentes.
-          </p>
-          <h4>¿Cómo funciona el IoT?</h4>
-          <p>
-            El término IoT hace referencia a todos los sistemas de dispositivos
-            físicos que reciben y transfieren datos a través de redes
-            inalámbricas con intervención humana mínima, lo cual es posible
-            gracias a la integración de dispositivos informáticos en todo tipo
-            de objetos.
-            <br />
-            Por ejemplo, un termostato <i>inteligente</i> (es decir, que utiliza
-            el IoT) recibe datos de la ubicación de su automóvil inteligente
-            mientras conduce para ajustar la temperatura de su casa antes de que
-            llegue. Todo esto se logra sin su intervención e incluso ofrece un
-            mejor resultado que si lo hiciera de forma manual.
-            <br />
-            Piense en el ejemplo del hogar inteligente. Para predecir el momento
-            ideal en el cual controlar el termostato antes de que usted llegue a
-            casa, el sistema de IoT puede conectarse a la
-            <a
-              href="https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces"
-              title="¿Qué es una API?"
-              target="_blank"
-              >API</a
-            >
-            de Google Maps y, de este modo, obtener información actual sobre el
-            tráfico en el área. Además, puede utilizar los datos a largo plazo
-            que recopila el automóvil para conocer sus hábitos de conducción.
-            Por otra parte, las empresas de servicios públicos tienen la
-            posibilidad de analizar los datos de IoT de los clientes con
-            termostatos inteligentes para optimizar el sistema a gran escala.
-          </p>
-        </div>
-        <div class="col-12 col-lg-4">
-          <img
-            class="img-fluid"
-            src="images/IoT.png"
-            alt="Tecnología de la información"
-            height="480px"
-          />
-        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </main>
+  <div id="textoIoT" class="container pb-4 pt-4">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h1>IoT-Internet de las Cosas</h1>
+        <h4>Descripción general del IoT</h4>
+        <p>
+          El Internet de las cosas (IoT) es el proceso que permite conectar
+          elementos físicos cotidianos al Internet: desde objetos domésticos
+          comunes, como las bombillas de luz, hasta recursos para la atención
+          de la salud, como los dispositivos médicos; también abarca prendas y
+          accesorios personales inteligentes e incluso los sistemas de las
+          ciudades inteligentes.
+        </p>
+        <h4>¿Cómo funciona el IoT?</h4>
+        <p>
+          El término IoT hace referencia a todos los sistemas de dispositivos
+          físicos que reciben y transfieren datos a través de redes
+          inalámbricas con intervención humana mínima, lo cual es posible
+          gracias a la integración de dispositivos informáticos en todo tipo
+          de objetos.
+          <br />
+          Por ejemplo, un termostato <i>inteligente</i> (es decir, que utiliza
+          el IoT) recibe datos de la ubicación de su automóvil inteligente
+          mientras conduce para ajustar la temperatura de su casa antes de que
+          llegue. Todo esto se logra sin su intervención e incluso ofrece un
+          mejor resultado que si lo hiciera de forma manual.
+          <br />
+          Piense en el ejemplo del hogar inteligente. Para predecir el momento
+          ideal en el cual controlar el termostato antes de que usted llegue a
+          casa, el sistema de IoT puede conectarse a la
+          <a href="https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces"
+            title="¿Qué es una API?" target="_blank">API</a>
+          de Google Maps y, de este modo, obtener información actual sobre el
+          tráfico en el área. Además, puede utilizar los datos a largo plazo
+          que recopila el automóvil para conocer sus hábitos de conducción.
+          Por otra parte, las empresas de servicios públicos tienen la
+          posibilidad de analizar los datos de IoT de los clientes con
+          termostatos inteligentes para optimizar el sistema a gran escala.
+        </p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <img class="img-fluid" src="images/IoT.png" alt="Tecnología de la información" height="480px" />
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <h4>Plataformas de IoT</h4>
-      <table class="table">
-        <thead class="table-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Azure IoT Hub</th>
-            <th scope="col">AWS IoT</th>
-            <th scope="col">Watson IoT Platform</th>
-            <th scope="col">Sofia2 IoT Platform</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Protocolos</th>
-            <td>HTTP, AMQP, MQTT y protocolos a medida usando Protocol Gateway</td>
-            <td>HTTP, MQTT</td>
-            <td>HTTP, MQTT</td>
-            <td>HTTP, MQTT, AMQP, JMS, OPC y protocolos a medida vía Gateway Plugin</td>
-          </tr>
-          <tr>
-            <th scope="row">Patrones de comunicación</th>
-            <td colspan="4" style="text-align:center">Telemetry, Command</td>
-          </tr>
-          <tr>
-            <th scope="row">Plataformas certificadas</th>
-            <td>.Net y UWP, Java, C, NodeJS</td>
-            <td>C, NodeJS, Javascript, Arduino, Java, Python, iOS, Android</td>
-            <td>C#, C, Python, Java, NodeJS</td>
-            <td>Java, Javascript, C, NodeJS, iOS, Android, Python, .Net, Arduino</td>
-          </tr>
-          <tr>
-            <th scope="row">Seguridad</th>
-            <td>TLS (Server Authentication)</td>
-            <td>TLS (Mutual Authentication</td>
-            <td>TLS</td>
-            <td>TLS</td>
-          </tr>
-          <tr>
-            <th scope="row">Autenticación</th>
-            <td>Por dispositivos con SAS token</td>
-            <td>Certificicado X.509 con autenticación cliente, IAM Service, Cognito Service</td>
-            <td>Per-device con token</td>
-            <td>Per-device/system con token, certificado X509, user/password</td>
-          </tr>
-          <tr>
-            <th scope="row">Precio</th>
-            <td>Pago por unidad IoT Hub según número de dispositivos y mensajes por días</td>
-            <td>Pago por tráfico en millones de mensajes (publicados de dispositivos y entregados a dispositivos)</td>
-            <td>Pago por número de dispositivos, tráfico de datos y almacenamiento</td>
-            <td>Modo SaaS: pago por tráfico de datos y almacenamiento. Modo PaaS: pago por VMs.</td>
-          </tr>
-          <tr>
-            <th scope="row">Interfaz</th>
-            <td><img class="interfaz img-fluid" src="images/AzureInterface.png" alt="Interfaz de Azure"></td>
-            <td><img class="interfaz img-fluid" src="images/AWSIoTInterface.png" alt="Interfaz de AWS IoT"></td>
-            <td><img class="interfaz img-fluid" src="images/WatsonIoTInteface.png" alt="Interfaz de Watson IoT"></td>
-            <td><img class="interfaz img-fluid" src="images/Sofia2IoTInterface.png" alt="Interfaz de Sofia2"></td>
-          </tr>
-        </tbody>
-      </table>
-      <section class="imagen-light">
-        <img src="images/close.svg" alt="" class="close">
-        <img src="images/educacion.jpg" alt="" class="agregar-imagen">
-      </section>
-    </div>
+  <div class="container">
+    <h4>Plataformas de IoT</h4>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Azure IoT Hub</th>
+          <th scope="col">AWS IoT</th>
+          <th scope="col">Watson IoT Platform</th>
+          <th scope="col">Sofia2 IoT Platform</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Protocolos</th>
+          <td>HTTP, AMQP, MQTT y protocolos a medida usando Protocol Gateway</td>
+          <td>HTTP, MQTT</td>
+          <td>HTTP, MQTT</td>
+          <td>HTTP, MQTT, AMQP, JMS, OPC y protocolos a medida vía Gateway Plugin</td>
+        </tr>
+        <tr>
+          <th scope="row">Patrones de comunicación</th>
+          <td colspan="4" style="text-align:center">Telemetry, Command</td>
+        </tr>
+        <tr>
+          <th scope="row">Plataformas certificadas</th>
+          <td>.Net y UWP, Java, C, NodeJS</td>
+          <td>C, NodeJS, Javascript, Arduino, Java, Python, iOS, Android</td>
+          <td>C#, C, Python, Java, NodeJS</td>
+          <td>Java, Javascript, C, NodeJS, iOS, Android, Python, .Net, Arduino</td>
+        </tr>
+        <tr>
+          <th scope="row">Seguridad</th>
+          <td>TLS (Server Authentication)</td>
+          <td>TLS (Mutual Authentication</td>
+          <td>TLS</td>
+          <td>TLS</td>
+        </tr>
+        <tr>
+          <th scope="row">Autenticación</th>
+          <td>Por dispositivos con SAS token</td>
+          <td>Certificicado X.509 con autenticación cliente, IAM Service, Cognito Service</td>
+          <td>Per-device con token</td>
+          <td>Per-device/system con token, certificado X509, user/password</td>
+        </tr>
+        <tr>
+          <th scope="row">Precio</th>
+          <td>Pago por unidad IoT Hub según número de dispositivos y mensajes por días</td>
+          <td>Pago por tráfico en millones de mensajes (publicados de dispositivos y entregados a dispositivos)</td>
+          <td>Pago por número de dispositivos, tráfico de datos y almacenamiento</td>
+          <td>Modo SaaS: pago por tráfico de datos y almacenamiento. Modo PaaS: pago por VMs.</td>
+        </tr>
+        <tr>
+          <th scope="row">Interfaz</th>
+          <td><img class="interfaz img-fluid" src="images/AzureInterface.png" alt="Interfaz de Azure"></td>
+          <td><img class="interfaz img-fluid" src="images/AWSIoTInterface.png" alt="Interfaz de AWS IoT"></td>
+          <td><img class="interfaz img-fluid" src="images/WatsonIoTInteface.png" alt="Interfaz de Watson IoT"></td>
+          <td><img class="interfaz img-fluid" src="images/Sofia2IoTInterface.png" alt="Interfaz de Sofia2"></td>
+        </tr>
+      </tbody>
+    </table>
+    <section class="imagen-light">
+      <img src="images/close.svg" alt="" class="close">
+      <img src="images/educacion.jpg" alt="" class="agregar-imagen">
+    </section>
+  </div>
 
-    <!-- /Main -->
-    <!-- Footer -->
-    <footer id="footer" class="pb-4 pt-4">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-12 col-lg">
-            <a href="index.html">Daniel Martel Janampa</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="Agricultura.html">Franco Alexis Ramos Nauto</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="medicina.html">Alisson Araceli Mamani Benavente</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="educacionEc2.html">Juan David Apaza Huamani</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="transporte.html">Evelin Mirella Ruiz Chavez</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- /Footer -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/lightboxMain.js"></script>
-  </body>
+  <!-- /Main -->
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    // Cargar el footer
+    fetch("componentes/footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+  <!-- /Footer -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/lightboxMain.js"></script>
+</body>
+
 </html>

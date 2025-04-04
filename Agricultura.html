@@ -137,11 +137,15 @@
         </section>
 
     </main>
-    <footer class="footer">
-        <div class="container" id="contacto">
-            <p></p>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        // Cargar el footer
+        fetch("componentes/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+    <!-- /Footer -->
 
     <script src="js/script.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>

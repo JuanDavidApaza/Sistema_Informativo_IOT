@@ -169,6 +169,15 @@
                 <a href="https://www.viewnext.com/iot-en-medicina/" target="_blank">Iot en la Medicina</a>
             </div>
         </section>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <script>
+            // Cargar el footer
+            fetch("componentes/footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        </script>
+        <!-- /Footer -->
 
 
         <script src="js/jquery-3.6.0.min.js"></script>

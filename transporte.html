@@ -202,6 +202,15 @@
             <br>
 
         </ul>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <script>
+            // Cargar el footer
+            fetch("componentes/footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        </script>
+        <!-- /Footer -->
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

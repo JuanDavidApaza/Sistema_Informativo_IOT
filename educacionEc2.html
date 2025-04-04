@@ -136,45 +136,15 @@
         allowfullscreen></iframe>
     </section>
   </main>
-  <footer id="referencias">
-    <h2>REFERENCIAS</h2>
-    <div class="contenedor footer-content">
-      <div class="contact-us">
-        <p>
-          <a
-            href="https://es.wikipedia.org/wiki/Internet_de_las_cosas#:~:text=Uno%20de%20los%20primeros%20campos,tediosas%20vinculadas%20con%20su%20actividad.">IoT.Eduacion.Wikipedia</a>
-        </p>
-        <p>
-          <a
-            href="https://www.appandweb.es/blog/internet-cosas-educacion-aplicaciones-ventajas/">IoT-educacion-aplicaciones-ventajas</a>
-        </p>
-        <p>
-          <a href="https://nctech.com.mx/blog/iot-industrial/el-internet-de-las-cosas-en-la-educacion/">Casos de uso del
-            IoT que mejoran la educación</a>
-        </p>
-        <p>
-          <a
-            href="https://www.fundacionbankinter.org/noticias/que-esta-aportando-internet-de-las-cosas-a-la-educacion/?_adin=02021864894">¿Qué
-            está aportando IoT a la Educación?</a>
-        </p>
-        <p>
-          <a href="http://edu4.me/que-impacto-tendra-la-internet-de-las-cosas-en-la-educacion/">¿Qué impacto tendra el
-            Internet de las Cosas en la
-            educación?</a>
-        </p>
-      </div>
-      <div class="social-media">
-
-        <a href="" class="social-media-icon">
-          <i class="bx bxl-facebook"></i>
-        </a>
-        <a href="" class="social-media-icon">
-          <i class="bx bxl-twitter"></i>
-        </a>
-      </div>
-    </div>
-    <div class="line"></div>
-  </footer>
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    // Cargar el footer
+    fetch("componentes/footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+  <!-- /Footer -->
 
 
   <script src="JS/menu.js"></script>
