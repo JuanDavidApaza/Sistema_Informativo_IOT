@@ -1,140 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilosM.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="images/icono_iomt.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>IOT en la Medicina</title>
 </head>
+
 <body>
+    <!-- Header -->
+    <div id="header"></div>
+    <script>
+        fetch("componentes/encabezado.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+    <!-- /Header -->
     <header class="header" id="inicio">
         <img src="images/hamburguesa.svg" alt="" class="hamburguer" />
         <nav class="menu-navegacion">
-          <a href="#inicio">Inicio</a>
-          <a href="#concepto">Concepto</a>
-          <a href="#ventajasIoMT">Ventajas</a>
-          <a href="#aplicacionesActualesIoMT">Aplicaciones Actuales</a>
-          <a href="#bibliografias">Bibliografías</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#concepto">Concepto</a>
+            <a href="#ventajasIoMT">Ventajas</a>
+            <a href="#aplicacionesActualesIoMT">Aplicaciones Actuales</a>
+            <a href="#bibliografias">Bibliografías</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">El internet de las cosas en la Medicina</h1>
             <p class="frase">
                 ' Tecnología aplicada a la salud '
             </p>
-          </div>
-        </header>
-        <main>
-            <section class="primeraparte" id="concepto">
-                <h2 class="subtitulo"> Iot en la Medicina</h2>
-                <div class="primerap">
-                    <img src="images/Imagenes1.png">
-                </div>
-                <p class="p1">
-                    El Internet de las cosas (IoT) ha abierto un mundo de posibilidades en la medicina: cuando se conecta a Internet, los dispositivos médicos 
-                    comunes pueden recopilar datos adicionales invaluables, dar una idea adicional de los síntomas y las tendencias, permitir la atención remota 
-                    y, en general, brindar a los pacientes más control sobre sus vidas y tratamiento. Es tan importante que tiene incluso sus propias siglas: el 
-                    IoT en la medicina es IoMT. Se le llama así a la tecnología médica conectada en red y, a su vez, conectada también a medios de tecnología de 
-                    la información. El IoMT resultó vital porque permite que los pacientes puedan desarrollar su vida sin tener que acudir a consulta ya que 
-                    dispositivos como los gadgets se ocupan de la gestión de datos y la manipulación de los mismos al enviarlos automáticamente a centros de datos.
-                    Y es que un simple gadget puede monitorizar el estado de salud y enviar esta información en tiempo real a los facultativos médicos con 
-                    notificaciones de nuestro estado de salud y advertencias de peligro.
+        </div>
+    </header>
+    <main>
+        <section class="primeraparte" id="concepto">
+            <h2 class="subtitulo"> Iot en la Medicina</h2>
+            <div class="primerap">
+                <img src="images/Imagenes1.png">
+            </div>
+            <p class="p1">
+                El Internet de las cosas (IoT) ha abierto un mundo de posibilidades en la medicina: cuando se conecta a
+                Internet, los dispositivos médicos
+                comunes pueden recopilar datos adicionales invaluables, dar una idea adicional de los síntomas y las
+                tendencias, permitir la atención remota
+                y, en general, brindar a los pacientes más control sobre sus vidas y tratamiento. Es tan importante que
+                tiene incluso sus propias siglas: el
+                IoT en la medicina es IoMT. Se le llama así a la tecnología médica conectada en red y, a su vez,
+                conectada también a medios de tecnología de
+                la información. El IoMT resultó vital porque permite que los pacientes puedan desarrollar su vida sin
+                tener que acudir a consulta ya que
+                dispositivos como los gadgets se ocupan de la gestión de datos y la manipulación de los mismos al
+                enviarlos automáticamente a centros de datos.
+                Y es que un simple gadget puede monitorizar el estado de salud y enviar esta información en tiempo real
+                a los facultativos médicos con
+                notificaciones de nuestro estado de salud y advertencias de peligro.
+            </p>
+
+            <div class="p2">
+                <p> Entonces a la hora de hablar de IoT en la medicina, podemos hablar de dos vertientes:
+                    <li>La primera de ellas, <strong>la que se utiliza en los hospitales digitales</strong>. Dotar a las
+                        máquinas de diagnóstico de IoMT no solo
+                        agiliza su uso, sino que además hace que este resulte mucho más eficiente.</li>
+                    <li>Por otro lado, también hay que hablar del <strong>IoMT que los pacientes utilizan en
+                            casa</strong>. Esto permite a sus doctores conectar con ellos y sus
+                        constantes vitales en tiempo real</li>
                 </p>
-                
-                <div class="p2">
-                    <p> Entonces a la hora de hablar de IoT en la medicina, podemos hablar de dos vertientes:
-                        <li>La primera de ellas, <strong>la que se utiliza en los hospitales digitales</strong>. Dotar a las máquinas de diagnóstico de IoMT no solo 
-                            agiliza su uso, sino que además hace que este resulte mucho más eficiente.</li>
-                        <li>Por otro lado, también hay que hablar del <strong>IoMT que los pacientes utilizan en casa</strong>. Esto permite a sus doctores conectar con ellos y sus 
-                            constantes vitales en tiempo real</li>
-                    </p>
-        
-                </div>
-                <img src="images/Imagenes2.png">
-            </section>
 
-    <section class="segundaparte" id="ventajasIoMT">
-    <h2>¿Qué ventajas aporta al sector médico el IOT? </h2>
-    
-    <div class="v2">
-        <li><strong>El ahorro de recursos económicos</strong>, la tecnología puede transformar las revisiones para que en vez de acudir al médico se hagan en casa con gadgets, ya que el diagnóstico 
-            médico consume gran parte de las facturas de los hospitales. </li>
-        <li><strong>Mejora de calidad de vida</strong> al prevenir enfermedades y notificar de posibles problemas de salud. </li>
-        <li><strong>Más eficiencia y aprovechamiento de personal</strong>, los enfermeros y doctores pueden hacer otras tareas más importantes que la realización de pruebas que ahora hacen los 
-            aparatos</li>
-        <li><strong>Automatizar operaciones y gestionar todos los datos recopilados</strong>. Este hecho minimiza el trabajo de los médicos que pueden aprovechar para formarse o tratar a la gente. </li>
-    </div>
-    </section>
+            </div>
+            <img src="images/Imagenes2.png">
+        </section>
 
-    <section class="terceraparte" id="aplicacionesActualesIoMT">
-    <h2>Aplicaciones actuales del IoT en medicina </h2>
-    <div class="p3">
-        <p>
-            El uso del IoT en medicina es cada vez más frecuente. En el 2020 se detectaron unos 600 millones de dispositivos médicos conectados, lo que supuso que este mercado 
-            creciese más de un 26 %. 
-            Estos son algunos de los ejemplos de aplicaciones actuales que demuestran su exitoso presente y que permiten prever un futuro prometedor:
-        </p>
-    </div>
+        <section class="segundaparte" id="ventajasIoMT">
+            <h2>¿Qué ventajas aporta al sector médico el IOT? </h2>
 
-    
-    
-    <div class="tercerap">
-        <h3>1. Audiómetros electrónicos</h3>
-        <img src="images/Imagenes3.jpg " class="imagenes" alt="">
-    </div>
-    <p class="p4"> En la salud auditiva, la utilización del internet de las cosas permite detectar y tratar mejor los problemas de oída. Por ejemplo, ya existen algunos audiómetros 
-        digitales que aportan datos constantemente. Uno de ellos lo desarrolló la compañía Kiversal: el Audixi 10, que puede conectarse a varios dispositivos e incluye otros 
-        servicios como un gestor de citas. </p>
+            <div class="v2">
+                <li><strong>El ahorro de recursos económicos</strong>, la tecnología puede transformar las revisiones
+                    para que en vez de acudir al médico se hagan en casa con gadgets, ya que el diagnóstico
+                    médico consume gran parte de las facturas de los hospitales. </li>
+                <li><strong>Mejora de calidad de vida</strong> al prevenir enfermedades y notificar de posibles
+                    problemas de salud. </li>
+                <li><strong>Más eficiencia y aprovechamiento de personal</strong>, los enfermeros y doctores pueden
+                    hacer otras tareas más importantes que la realización de pruebas que ahora hacen los
+                    aparatos</li>
+                <li><strong>Automatizar operaciones y gestionar todos los datos recopilados</strong>. Este hecho
+                    minimiza el trabajo de los médicos que pueden aprovechar para formarse o tratar a la gente. </li>
+            </div>
+        </section>
 
-        <div class="tercerap">
-            <h3>2. Monitor de glucosa</h3>
-            <img src="images/Imagenes4.jpg" class="imagenes" alt="">
-        </div>
-        <p class="p4"> Para los pacientes que sufren de diabetes del tipo 1 o 2, cabe la posibilidad de controlar sus niveles de azúcar en sangre a través de un dispositivo 
-            inteligente. Este se conoce como monitor de glucosa continuo (o CGM, por sus siglas en inglés) y mide incluso patrones o tendencias, además de informar en tiempo real 
-            del estado de esos niveles.</p>
-        <div class="tercerap">
-            <h3>3. Pastillas inteligentes </h3>
-            <img src="images/Imagenes5.png" class="imagenes" alt="">
-        </div>
-        <p class="p4"> Ya existen las pastillas inteligentes gracias al IoT en medicina. Píldoras como las de Abilify MyCite están dirigidas a tratar ciertas enfermedades como la 
-            esquizofrenia o el trastorno bipolar. Funcionan con un sensor digital incorporado que se activa al disolverse en el estómago. De esta forma, los médicos pueden saber 
-            con certeza si sus pacientes siguen el tratamiento o no.</p>
-        <div class="tercerap">
-             <h3>4. Lentes de contacto e inhaladores  </h3>
-             
-        </div>
-        <p class="p5"> Existen lentes de contacto dotadas de inteligencia como las Triggerfish, que pueden detectar modificaciones en el tamaño de la pupila, el iris o la retina 
-            del ojo. Por otro lado, los inhaladores inteligentes son una realidad muy útil para pacientes con problemas respiratorios.  </p>
-        <img src="images/ultima imagen.png" >
-    </section>
-        
+        <section class="terceraparte" id="aplicacionesActualesIoMT">
+            <h2>Aplicaciones actuales del IoT en medicina </h2>
+            <div class="p3">
+                <p>
+                    El uso del IoT en medicina es cada vez más frecuente. En el 2020 se detectaron unos 600 millones de
+                    dispositivos médicos conectados, lo que supuso que este mercado
+                    creciese más de un 26 %.
+                    Estos son algunos de los ejemplos de aplicaciones actuales que demuestran su exitoso presente y que
+                    permiten prever un futuro prometedor:
+                </p>
+            </div>
+
+
+
+            <div class="tercerap">
+                <h3>1. Audiómetros electrónicos</h3>
+                <img src="images/Imagenes3.jpg " class="imagenes" alt="">
+            </div>
+            <p class="p4"> En la salud auditiva, la utilización del internet de las cosas permite detectar y tratar
+                mejor los problemas de oída. Por ejemplo, ya existen algunos audiómetros
+                digitales que aportan datos constantemente. Uno de ellos lo desarrolló la compañía Kiversal: el Audixi
+                10, que puede conectarse a varios dispositivos e incluye otros
+                servicios como un gestor de citas. </p>
+
+            <div class="tercerap">
+                <h3>2. Monitor de glucosa</h3>
+                <img src="images/Imagenes4.jpg" class="imagenes" alt="">
+            </div>
+            <p class="p4"> Para los pacientes que sufren de diabetes del tipo 1 o 2, cabe la posibilidad de controlar
+                sus niveles de azúcar en sangre a través de un dispositivo
+                inteligente. Este se conoce como monitor de glucosa continuo (o CGM, por sus siglas en inglés) y mide
+                incluso patrones o tendencias, además de informar en tiempo real
+                del estado de esos niveles.</p>
+            <div class="tercerap">
+                <h3>3. Pastillas inteligentes </h3>
+                <img src="images/Imagenes5.png" class="imagenes" alt="">
+            </div>
+            <p class="p4"> Ya existen las pastillas inteligentes gracias al IoT en medicina. Píldoras como las de
+                Abilify MyCite están dirigidas a tratar ciertas enfermedades como la
+                esquizofrenia o el trastorno bipolar. Funcionan con un sensor digital incorporado que se activa al
+                disolverse en el estómago. De esta forma, los médicos pueden saber
+                con certeza si sus pacientes siguen el tratamiento o no.</p>
+            <div class="tercerap">
+                <h3>4. Lentes de contacto e inhaladores </h3>
+
+            </div>
+            <p class="p5"> Existen lentes de contacto dotadas de inteligencia como las Triggerfish, que pueden detectar
+                modificaciones en el tamaño de la pupila, el iris o la retina
+                del ojo. Por otro lado, los inhaladores inteligentes son una realidad muy útil para pacientes con
+                problemas respiratorios. </p>
+            <img src="images/ultima imagen.png">
+        </section>
+
 
         <section class="imagen-ligth">
-            
-            <img src="images/medicina2.jpg" alt="" class="imagen-inicio">
-        </section> 
 
-        
-        <section class="cuartaparte" id="bibliografias">
-        <h2 class="bibliografia">Bibliografías </h2>
-        <div class="p3">
-            <a href="https://tienda.digital/10-ejemplos-de-internet-de-las-cosas-iot-en-medicina/" target="_blank">Ejemplos de Internet de las cosas</a>
-        </div>
-        <div class="p3">
-            <a href="https://doctorgo.es/blog/iot-en-medicina-significado-y-aplicaciones/" target="_blank">IOT en la Medicina, significado y aplicaciones</a>
-        </div>
-        <div class="p3">
-            <a href="https://www.viewnext.com/iot-en-medicina/" target="_blank">Iot en la Medicina</a>
-        </div>
+            <img src="images/medicina2.jpg" alt="" class="imagen-inicio">
         </section>
-            
-        
-        
-        <script src="js/iot_medicina.js"></script>  
+
+
+        <section class="cuartaparte" id="bibliografias">
+            <h2 class="bibliografia">Bibliografías </h2>
+            <div class="p3">
+                <a href="https://tienda.digital/10-ejemplos-de-internet-de-las-cosas-iot-en-medicina/"
+                    target="_blank">Ejemplos de Internet de las cosas</a>
+            </div>
+            <div class="p3">
+                <a href="https://doctorgo.es/blog/iot-en-medicina-significado-y-aplicaciones/" target="_blank">IOT en la
+                    Medicina, significado y aplicaciones</a>
+            </div>
+            <div class="p3">
+                <a href="https://www.viewnext.com/iot-en-medicina/" target="_blank">Iot en la Medicina</a>
+            </div>
+        </section>
+
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/lightboxMain.js"></script>
+        <script src="js/iot_medicina.js"></script>
 </body>
+
 </html>

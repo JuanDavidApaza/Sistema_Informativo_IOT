@@ -6,31 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilosA.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="shortcut icon" href="images/IoT.png" />
     <title>Document</title>
 </head>
 
 <body>
-    <header class="header" id="inicio">
+    <!-- Header -->
+    <div id="header"></div>
+    <script>
+        fetch("componentes/encabezado.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+    <!-- /Header -->
+    <nav class="header" id="inicio">
         <img src="images/Menu.svg" alt="" class="menu">
         <nav class="menu-navegacion ">
             <a href="#inicio">Inicio</a>
             <a href="#definicion">Definicion</a>
             <a href="#beneficios">Beneficios</a>
             <a href="#soluciones ">Soluciones</a>
-            
+
         </nav>
         <div class="cabesera">
             <h1 class="titulo">IoT: elemento clave en la agricultura</h1>
         </div>
 
-    </header>
+    </nav>
     <main>
         <section class="definicion contenedor" id="definicion">
             <h2 class="subtitulo">Iot en la Agricultura</h2>
             <div class="contenedor-definicion">
                 <img src="images/Invernadero.jpg" alt="">
                 <p class="p1">
-                    La <a onclick="redireccion()"  > Agricultura </a> continúa siendo una de las actividades económicas más importantes en un gran
+                    La <a onclick="redireccion()"> Agricultura </a> continúa siendo una de las actividades económicas
+                    más importantes en un gran
                     número de países y
                     ha logrado expandirse significativamente gracias a los avances tecnológicos de las últimas
                     décadas. Una de estas
@@ -73,19 +85,20 @@
             <h4>Invernaderos inteligentes</h4>
             <div class="image1">
                 <img src="images/invernaderos.jpg" alt="">
-            
-            <p>Los invernaderos tradicionales tienen la función de crear determinados ambientes climatológicos para
-                favorecer el
-                desarrollo de determinados alimentos y plantaciones.
-                El control de las medidas climáticas es llevado a cabo de forma manual, por lo que es necesaria la
-                supervisión
-                por parte del personal. Mediante el IoT se podrían insertar unos sensores capaces de detectar los
-                parámetros
-                climáticos del lugar y regularlos para mantener las condiciones óptimas deseadas.
-                De este modo no será necesario llevar a cabo una inspección manual, dando lugar a un incremento de la
-                producción
-                y la rentabilidad.</p>
-                </div>
+
+                <p>Los invernaderos tradicionales tienen la función de crear determinados ambientes climatológicos para
+                    favorecer el
+                    desarrollo de determinados alimentos y plantaciones.
+                    El control de las medidas climáticas es llevado a cabo de forma manual, por lo que es necesaria la
+                    supervisión
+                    por parte del personal. Mediante el IoT se podrían insertar unos sensores capaces de detectar los
+                    parámetros
+                    climáticos del lugar y regularlos para mantener las condiciones óptimas deseadas.
+                    De este modo no será necesario llevar a cabo una inspección manual, dando lugar a un incremento de
+                    la
+                    producción
+                    y la rentabilidad.</p>
+            </div>
 
             <h4>Control inteligente de plagas</h4>
             <p>Las plagas o enfermedades que pueden atacar a los campos de cultivo pueden suponer un gran riesgo para
@@ -131,6 +144,9 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/lightboxMain.js"></script>
 
 </body>
 

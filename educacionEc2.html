@@ -1,191 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IoT En la Educación</title>
-    <link rel="stylesheet" href="css/estilosE.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header" id="inicio">
-      <img src="images/hamburguesa.svg" alt="" class="hamburguer" />
-      <nav class="menu-navegacion">
-        <a href="#inicio">Inicio</a>
-        <a href="#concepto">Concepto</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#casos">Casos</a>
-        <a href="#video">Video</a>
-        <a href="#referencias">Referencias</a>
-      </nav>
-      <div class="contenedor head">
-        <h1 class="titulo">El internet de las cosas en la Educación</h1>
-        <p class="copy">
-          Es un medio de comunicación, de interacción y de organización social.
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT En la Educación</title>
+  <link rel="stylesheet" href="css/estilosE.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+  <script>
+    fetch("componentes/encabezado.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+  <!-- /Header -->
+  <header class="header" id="inicio">
+    <img src="images/hamburguesa.svg" alt="" class="hamburguer" />
+    <nav class="menu-navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#concepto">Concepto</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#casos">Casos</a>
+      <a href="#video">Video</a>
+      <a href="#referencias">Referencias</a>
+    </nav>
+    <div class="contenedor head">
+      <h1 class="titulo">El internet de las cosas en la Educación</h1>
+      <p class="copy">
+        Es un medio de comunicación, de interacción y de organización social.
+      </p>
+    </div>
+  </header>
+  <main>
+    <section class="services contenedor" id="concepto">
+      <h2 class="subtitulo">¿EN QUE AYUDO EL INTERNET DE LAS COSAS?</h2>
+      <div class="contenedor-servicio">
+        <img src="images/concepto.jpg" alt="" />
+        <div class="service imagenallado">
+          <p class="parrafo">
+            En el caso de este importante sector. El impacto que tendrá esta
+            nueva tecnología será mayúsculo. Hablamos de las plataformas de
+            educación en línea, de los sistemas de aprendizaje adaptativo –
+            los cuáles plantean ejercicios que adaptan al ritmo de los
+            estudiantes y los ayudan a mejorar su comprensión de los temas que
+            les cuesta aprender –, y hasta de innovaciones potencialmente
+            revolucionarias como la realidad virtual. Sin embargo, existe un
+            área en la que la tecnología está avanzando rápidamente y que, a
+            pesar de su enorme potencial transformador, rara vez es vinculada
+            al ámbito educativo. Se trata por supuesto de la Internet de las
+            cosas. Uno de los primeros campos en los que estas nuevas
+            tecnologías están teniendo un impacto es en la reducción de la
+            carga laboral de los docentes. Cada vez más dispositivos, están
+            ayudando a los docentes a alivianar algunas de las tareas más
+            tediosas vinculadas con su actividad.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="portafolio">
+      <div class="contenedor">
+        <h2 class="subtitulo">PRUEBAS</h2>
+        <div class="contenedor-galeria">
+          <img src="images/img1.jpg" alt="" class="img-galery" />
+          <img src="images/img3.jpg" alt="" class="img-galery" />
+          <img src="images/img4.jpg" alt="" class="img-galery" />
+          <img src="images/img6.jpg" alt="" class="img-galery" />
+          <img src="images/img2.jpg" alt="" class="img-galery" />
+          <img src="images/img5.jpg" alt="" class="img-galery" />
+        </div>
+      </div>
+    </section>
+    <section class="imagen-ligth">
+      <img src="images/close.svg" alt="" class="close">
+      <img src="images/prins.jpg" alt="" class="agregar-imagen">
+    </section>
+    <section class="contenedor" id="casos">
+      <h2 class="subtitulo">CASOS QUE MEJORARON GRACIAS AL IoT</h2>
+      <li>Clases a distancia</li>
+      <p class="parrafos">
+        Mediante el uso de los sistemas de videoconferencias disponibles en
+        computadoras o equipos móviles con facilidad de cámaras de video
+        incorporadas es posible impartir la enseña a puntos distantes. Este
+        tipo de formación remota está teniendo alta demanda y en ese sentido
+        existen muchas aplicaciones o programas en el mercado.
+      </p>
+      <li>Consultorias y tutoriales</li>
+      <p class="parrafos">
+        Consiste en el intercambio de información entre estudiantes y
+        profesores a través del correo electrónico, para ello se asignan los
+        trabajos y se establecen los procedimientos para las preguntas,
+        respuestas y consultas. En el caso de los tutoriales se indican
+        enlaces o rutas de acceso a videos sobre temas particulares con los
+        paso a paso que deben hacer los alumnos.
+      </p>
+      <li>Páginas de asignaturas</li>
+      <p class="parrafos">
+        Es una dirección electrónica del tipo URL, con un subdominio (www) y
+        dominio (.com, .net, .org) donde se coloca información de textos,
+        numérica e imágenes para las diferentes categorías académicas
+        (asignaturas) que elaboran los profesores o docentes y dejan a la
+        disposición de los alumnos para organizar el estudio, programación,
+        apuntes, enlaces a otras páginas y los sistemas de evaluaciones.
+      </p>
+      <li>Biblioteca digital y recursos informativos</li>
+      <p class="parrafos">
+        Son centros de almacenamiento de datos electrónicos organizados de
+        manera tal que sea fácil su búsqueda y generar reservas para su
+        lectura en línea, algunas otras ofrecen facilidades para descargas de
+        documentos. También existen sitios en el Internet que proporcionan
+        material didáctico, cursos, fórum de discusión y asesoramiento en
+        línea.
+      </p>
+      <li>Centros educativos virtuales</li>
+      <p class="parrafos">
+        Son plataformas y medios que ejecutan cursos o programas de formación
+        académica de a través de medios telemáticos en computadoras o
+        dispositivos móviles, estas áreas de transferencias de conocimientos y
+        saberes aprendidos son certificadas, y a su vez son reconocidas como
+        válidas en el campo laboral y empresarial.
+      </p>
+    </section>
+    <section class="contenedor" id="video">
+      <h2 class="subtitulo">VIDEO REFERENCIAL</h2>
+      <iframe class="video" width="1100" height="650" src="https://www.youtube.com/embed/OvJ2QE_NzYI?autoplay=1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+  </main>
+  <footer id="referencias">
+    <h2>REFERENCIAS</h2>
+    <div class="contenedor footer-content">
+      <div class="contact-us">
+        <p>
+          <a
+            href="https://es.wikipedia.org/wiki/Internet_de_las_cosas#:~:text=Uno%20de%20los%20primeros%20campos,tediosas%20vinculadas%20con%20su%20actividad.">IoT.Eduacion.Wikipedia</a>
+        </p>
+        <p>
+          <a
+            href="https://www.appandweb.es/blog/internet-cosas-educacion-aplicaciones-ventajas/">IoT-educacion-aplicaciones-ventajas</a>
+        </p>
+        <p>
+          <a href="https://nctech.com.mx/blog/iot-industrial/el-internet-de-las-cosas-en-la-educacion/">Casos de uso del
+            IoT que mejoran la educación</a>
+        </p>
+        <p>
+          <a
+            href="https://www.fundacionbankinter.org/noticias/que-esta-aportando-internet-de-las-cosas-a-la-educacion/?_adin=02021864894">¿Qué
+            está aportando IoT a la Educación?</a>
+        </p>
+        <p>
+          <a href="http://edu4.me/que-impacto-tendra-la-internet-de-las-cosas-en-la-educacion/">¿Qué impacto tendra el
+            Internet de las Cosas en la
+            educación?</a>
         </p>
       </div>
-    </header>
-    <main>
-      <section class="services contenedor" id="concepto">
-        <h2 class="subtitulo">¿EN QUE AYUDO EL INTERNET DE LAS COSAS?</h2>
-        <div class="contenedor-servicio">
-          <img src="images/concepto.jpg" alt="" />
-          <div class="service imagenallado" >
-            <p class="parrafo">
-              En el caso de este importante sector. El impacto que tendrá esta
-              nueva tecnología será mayúsculo. Hablamos de las plataformas de
-              educación en línea, de los sistemas de aprendizaje adaptativo –
-              los cuáles plantean ejercicios que adaptan al ritmo de los
-              estudiantes y los ayudan a mejorar su comprensión de los temas que
-              les cuesta aprender –, y hasta de innovaciones potencialmente
-              revolucionarias como la realidad virtual. Sin embargo, existe un
-              área en la que la tecnología está avanzando rápidamente y que, a
-              pesar de su enorme potencial transformador, rara vez es vinculada
-              al ámbito educativo. Se trata por supuesto de la Internet de las
-              cosas. Uno de los primeros campos en los que estas nuevas
-              tecnologías están teniendo un impacto es en la reducción de la
-              carga laboral de los docentes. Cada vez más dispositivos, están
-              ayudando a los docentes a alivianar algunas de las tareas más
-              tediosas vinculadas con su actividad. 
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="gallery" id="portafolio">
-        <div class="contenedor">
-          <h2 class="subtitulo">PRUEBAS</h2>
-          <div class="contenedor-galeria">
-            <img src="images/img1.jpg" alt="" class="img-galery" />
-            <img src="images/img3.jpg" alt="" class="img-galery" />
-            <img src="images/img4.jpg" alt="" class="img-galery" />
-            <img src="images/img6.jpg" alt="" class="img-galery" />
-            <img src="images/img2.jpg" alt="" class="img-galery" />
-            <img src="images/img5.jpg" alt="" class="img-galery" />
-          </div>
-        </div>
-      </section>
-      <section class="imagen-ligth">
-        <img src="images/close.svg" alt="" class="close">
-        <img src="images/prins.jpg" alt="" class="agregar-imagen">
-      </section> 
-      <section class="contenedor" id="casos">
-        <h2 class="subtitulo">CASOS QUE MEJORARON GRACIAS AL IoT</h2>
-        <li>Clases a distancia</li>
-        <p class="parrafos">
-          Mediante el uso de los sistemas de videoconferencias disponibles en
-          computadoras o equipos móviles con facilidad de cámaras de video
-          incorporadas es posible impartir la enseña a puntos distantes. Este
-          tipo de formación remota está teniendo alta demanda y en ese sentido
-          existen muchas aplicaciones o programas en el mercado.
-        </p >
-        <li>Consultorias y tutoriales</li>
-        <p class="parrafos">
-          Consiste en el intercambio de información entre estudiantes y
-          profesores a través del correo electrónico, para ello se asignan los
-          trabajos y se establecen los procedimientos para las preguntas,
-          respuestas y consultas. En el caso de los tutoriales se indican
-          enlaces o rutas de acceso a videos sobre temas particulares con los
-          paso a paso que deben hacer los alumnos.
-        </p>
-        <li>Páginas de asignaturas</li>
-        <p class="parrafos">
-          Es una dirección electrónica del tipo URL, con un subdominio (www) y
-          dominio (.com, .net, .org) donde se coloca información de textos,
-          numérica e imágenes para las diferentes categorías académicas
-          (asignaturas) que elaboran los profesores o docentes y dejan a la
-          disposición de los alumnos para organizar el estudio, programación,
-          apuntes, enlaces a otras páginas y los sistemas de evaluaciones.
-        </p>
-        <li>Biblioteca digital y recursos informativos</li>
-        <p class="parrafos">
-          Son centros de almacenamiento de datos electrónicos organizados de
-          manera tal que sea fácil su búsqueda y generar reservas para su
-          lectura en línea, algunas otras ofrecen facilidades para descargas de
-          documentos. También existen sitios en el Internet que proporcionan
-          material didáctico, cursos, fórum de discusión y asesoramiento en
-          línea.
-        </p>
-        <li>Centros educativos virtuales</li>
-        <p class="parrafos">
-          Son plataformas y medios que ejecutan cursos o programas de formación
-          académica de a través de medios telemáticos en computadoras o
-          dispositivos móviles, estas áreas de transferencias de conocimientos y
-          saberes aprendidos son certificadas, y a su vez son reconocidas como
-          válidas en el campo laboral y empresarial.
-        </p>
-      </section>
-      <section class="contenedor" id="video">
-        <h2 class="subtitulo">VIDEO REFERENCIAL</h2>
-        <iframe class="video"
-          width="1100"
-          height="650"
-          src="https://www.youtube.com/embed/OvJ2QE_NzYI?autoplay=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
-    </main>
-    <footer id="referencias">
-        <h2>REFERENCIAS</h2>
-        <div class="contenedor footer-content">
-            <div class="contact-us">
-                <p>
-                    <a
-                      href="https://es.wikipedia.org/wiki/Internet_de_las_cosas#:~:text=Uno%20de%20los%20primeros%20campos,tediosas%20vinculadas%20con%20su%20actividad."
-                      >IoT.Eduacion.Wikipedia</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.appandweb.es/blog/internet-cosas-educacion-aplicaciones-ventajas/"
-                      >IoT-educacion-aplicaciones-ventajas</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="https://nctech.com.mx/blog/iot-industrial/el-internet-de-las-cosas-en-la-educacion/"
-                      >Casos de uso del IoT que mejoran la educación</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.fundacionbankinter.org/noticias/que-esta-aportando-internet-de-las-cosas-a-la-educacion/?_adin=02021864894"
-                      >¿Qué está aportando IoT a la Educación?</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="http://edu4.me/que-impacto-tendra-la-internet-de-las-cosas-en-la-educacion/"
-                      >¿Qué impacto tendra el Internet de las Cosas en la
-                      educación?</a
-                    >
-                  </p>
-            </div>
-            <div class="social-media">
-                
-                <a href="" class="social-media-icon">
-                    <i class="bx bxl-facebook"></i>
-                </a>
-                <a href="" class="social-media-icon">
-                    <i class="bx bxl-twitter"></i>
-                </a>
-            </div>
-        </div>
-        <div class="line"></div>
-    </footer>
-    
-    
-    <script src="JS/menu.js"></script>
-    <script src="JS/lightbox.js"></script>
-  </body>
+      <div class="social-media">
+
+        <a href="" class="social-media-icon">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="" class="social-media-icon">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </div>
+    </div>
+    <div class="line"></div>
+  </footer>
+
+
+  <script src="JS/menu.js"></script>
+  <script src="JS/lightbox.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/lightboxMain.js"></script>
+</body>
+
 </html>

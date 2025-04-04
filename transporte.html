@@ -1,159 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilosT.css" >
-        <link rel="shortcut icon" href="images/logo.PNG">
-        <title>IoT en el Tranporte</title>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap"
-        rel="stylesheet"
-        
-        href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-        rel="stylesheet"
-    />
-    </head>
 
-    <body style="background-color:rgb(240, 240, 240);">
-        <header class="header" id="inicio">
-            <img src="images/bx-menu.svg" alt="" class="lista">
-            <nav class="lista-desplegable">
-                <a href="#inicio">Inicio</a>
-                <a href="#descripcion">Descripción</a>
-                <a href="#beneficios">Beneficios</a>
-                <a href="#compañias">Compañias</a>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosT.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.PNG">
+    <title>IoT en el Tranporte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:rgb(240, 240, 240);">
+    <!-- Header -->
+    <div id="header"></div>
+    <script>
+        fetch("componentes/encabezado.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+    <!-- /Header -->
+    <header class="header" id="inicio">
+        <img src="images/bx-menu.svg" alt="" class="lista">
+        <nav class="lista-desplegable">
+            <a href="#inicio">Inicio</a>
+            <a href="#descripcion">Descripción</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#compañias">Compañias</a>
+        </nav>
         <div class="contenedor head">
             <h1 class="titulo">El internet de las cosas en el Tranporte</h1>
             <p class="copy">
                 Cada vez son más los vehículos que se conectan al ecosistema del Internet de las cosas (IoT).
             </p>
-            </div>
-        </header>
+        </div>
+    </header>
 
     <!-- <img src="images/principal.PNG" alt="" class="imagen_principal">-->
     <br>
-        <!--<h1 class="titulo"><u>IoT en el Tranporte</u></h1>-->
+    <!--<h1 class="titulo"><u>IoT en el Tranporte</u></h1>-->
 
-            <div>
-            
-            <h2 id="descripcion">¿Cómo influye IoT en el transporte?</h2>
-            <img  src="images/imagen_principal.gif" alt="IoT en el transporte" height="300" width="600">
-            
-            
-            <p class="principal">
-                A medida que transcurre el tiempo, hay cada vez más transporte vehicular que se conecta al ecosistema de IoT debido a
-                que las tecnologías son cada vez más avanzadas y esto permite generar avances en la automatización de vehículos o en la
-                mejora de rutas o manejo de información a gran escala.
-            </p> 
+    <div>
 
-            <p class="principal">
-                Esta tecnología le permite a los dueños de las flotas alcanzar estándares muy altos de sostenibilidad y responsabilidad
-                corporativa.
-            </p>
-            
-            <h2 id="beneficios">6 ejemplos de beneficios que genera el Internet de las cosas (IOT) en el sector de transporte</h2>
+        <h2 id="descripcion">¿Cómo influye IoT en el transporte?</h2>
+        <img src="images/imagen_principal.gif" alt="IoT en el transporte" height="300" width="600">
 
-            <ol>
 
-                <h2><li class="beneficios">Recopilación de datos</li></h2>
-                <img class="imagen_derecha" src="images/imagen2.PNG" alt="Recopilación de datos">
-                <p>El Internet de las cosas (IoT) permite recopilar datos de los vehículos a través de sensores instalados, de esta manera
-                se proporciona información detallada sobre el rendimiento del vehículo y el comportamiento del conductor. Cuando estos
-                datos se analizan, se pueden traducir en importantes ganancias y eficiencia para toda la flota. Permitiendo a los técnicos 
-                prevenir alguna falla en el vehículo, como también ayudar a reconocer errores operativos o averías. Y gracias a los IoT 
+        <p class="principal">
+            A medida que transcurre el tiempo, hay cada vez más transporte vehicular que se conecta al ecosistema de IoT
+            debido a
+            que las tecnologías son cada vez más avanzadas y esto permite generar avances en la automatización de
+            vehículos o en la
+            mejora de rutas o manejo de información a gran escala.
+        </p>
+
+        <p class="principal">
+            Esta tecnología le permite a los dueños de las flotas alcanzar estándares muy altos de sostenibilidad y
+            responsabilidad
+            corporativa.
+        </p>
+
+        <h2 id="beneficios">6 ejemplos de beneficios que genera el Internet de las cosas (IOT) en el sector de
+            transporte</h2>
+
+        <ol>
+
+            <h2>
+                <li class="beneficios">Recopilación de datos</li>
+            </h2>
+            <img class="imagen_derecha" src="images/imagen2.PNG" alt="Recopilación de datos">
+            <p>El Internet de las cosas (IoT) permite recopilar datos de los vehículos a través de sensores instalados,
+                de esta manera
+                se proporciona información detallada sobre el rendimiento del vehículo y el comportamiento del
+                conductor. Cuando estos
+                datos se analizan, se pueden traducir en importantes ganancias y eficiencia para toda la flota.
+                Permitiendo a los técnicos
+                prevenir alguna falla en el vehículo, como también ayudar a reconocer errores operativos o averías. Y
+                gracias a los IoT
                 podríamos reducir el porcentaje de accidentes.</p>
-                
 
-                <h2><li class="beneficios">Reconocimiento automático</li></h2>
-                <img class="imagen_izquierda" src="images/imagen3.PNG" alt="Reconocimiento automático">
-                <p>La conexión entre dispositivos, nube y plataforma permite conocer casi de manera automática el estado de las rutas y las
-                posibles mejoras. Las principales preocupaciones del tráfico son la gestión de la congestión, la reducción de
-                accidentes y el estacionamiento. IoT nos permite observar y analizar mejor el flujo de tráfico a través de dispositivos
-                en todos los puntos de observación del tráfico y así ver la alternativas más rápidas para llegar al lugar de destino, 
+
+            <h2>
+                <li class="beneficios">Reconocimiento automático</li>
+            </h2>
+            <img class="imagen_izquierda" src="images/imagen3.PNG" alt="Reconocimiento automático">
+            <p>La conexión entre dispositivos, nube y plataforma permite conocer casi de manera automática el estado de
+                las rutas y las
+                posibles mejoras. Las principales preocupaciones del tráfico son la gestión de la congestión, la
+                reducción de
+                accidentes y el estacionamiento. IoT nos permite observar y analizar mejor el flujo de tráfico a través
+                de dispositivos
+                en todos los puntos de observación del tráfico y así ver la alternativas más rápidas para llegar al
+                lugar de destino,
                 evitando retrasos.</p>
-                
 
-                <h2><li class="beneficios">Nuevos métodos de rastreo</li></h2>
-                <img class="imagen_derecha" src="images/imagen4.PNG" alt="Nuevos métodos de rastreo">
-                <p>Con los equipos IoT podemos mantener un seguimiento de los vehículos conectados, de los cargamentos, como palés,
-                paquetes y carros, y de las entregas en curso. Antes, escanear códigos de barras resultaba ser más eficiente; sin
-                embargo, con el Internet de las cosas (IoT) es más económico usar sensores para rastrear los paquetes. Las
+
+            <h2>
+                <li class="beneficios">Nuevos métodos de rastreo</li>
+            </h2>
+            <img class="imagen_derecha" src="images/imagen4.PNG" alt="Nuevos métodos de rastreo">
+            <p>Con los equipos IoT podemos mantener un seguimiento de los vehículos conectados, de los cargamentos, como
+                palés,
+                paquetes y carros, y de las entregas en curso. Antes, escanear códigos de barras resultaba ser más
+                eficiente; sin
+                embargo, con el Internet de las cosas (IoT) es más económico usar sensores para rastrear los paquetes.
+                Las
                 actualizaciones detalladas permiten a los clientes saber exactamente cuándo llega su entrega. </p>
-                
 
-                <h2><li class="beneficios">Datos en tiempo real</li></h2>
-                <p>Tener vehículos conectados por IoT permite acceder en tiempo real a datos que ayudan a optimizar la logística y los
-                tiempos entre punto de carga y destino. Conocer con exactitud el peso, las dimensiones y unidades del producto ayuda a
+
+            <h2>
+                <li class="beneficios">Datos en tiempo real</li>
+            </h2>
+            <p>Tener vehículos conectados por IoT permite acceder en tiempo real a datos que ayudan a optimizar la
+                logística y los
+                tiempos entre punto de carga y destino. Conocer con exactitud el peso, las dimensiones y unidades del
+                producto ayuda a
                 la selección de mejores rutas y la escogencia de los vehículos adecuados para transportarlos.</p>
 
 
-                <h2><li class="beneficios">Detección de fallas</li></h2>
-                <p>El Internet de las cosas (IoT) aplicado a la logística también permite detectar fallas o incluso accidentes en el
-                mantenimiento de las mercancías. Esto ayuda a prevenir los riesgos laborales y la pérdida de productos.</p>
+            <h2>
+                <li class="beneficios">Detección de fallas</li>
+            </h2>
+            <p>El Internet de las cosas (IoT) aplicado a la logística también permite detectar fallas o incluso
+                accidentes en el
+                mantenimiento de las mercancías. Esto ayuda a prevenir los riesgos laborales y la pérdida de productos.
+            </p>
 
 
-                <h2><li class="beneficios">Monitoreo de temperatura</li></h2>
-                <img class="imagen_izquierda" src="images/imagen5.PNG" alt="Monitoreo de temperatura">
-                <p>Algunos productos requieren un estricto control de temperatura y humedad. Gracias al IoT en el transporte, se pueden
+            <h2>
+                <li class="beneficios">Monitoreo de temperatura</li>
+            </h2>
+            <img class="imagen_izquierda" src="images/imagen5.PNG" alt="Monitoreo de temperatura">
+            <p>Algunos productos requieren un estricto control de temperatura y humedad. Gracias al IoT en el
+                transporte, se pueden
                 controlar las condiciones de los productos y prevenir deterioros por alteraciones ambientales.</p>
 
-            </ol>
+        </ol>
 
         <br>
         <br>
         <br>
 
-        <h2 id="compañias">Ejemplos de compañías de transportes y logística que están haciendo grandes cosas con IoT</h2>
+        <h2 id="compañias">Ejemplos de compañías de transportes y logística que están haciendo grandes cosas con IoT
+        </h2>
 
         <ul>
 
-            <li class="compañias">El Departamento de Transporte (DOT) de Alaska planta cara a la madre naturaleza con IoT.</li>
-            <p class="descripcion_compañia">"Con WeatherCloud, hemos empoderado a nuestro personal para que sea más proactivo en la lucha 
-            contra las tormentas de
-            invierno".</p>
-            <p><b>Daniel Schacher, director de Mantenimiento, Departamento de Transportes y Servicios Públicos de Alaska</b></p>
-            <a class="enlaces" href="https://customers.microsoft.com/es-es/story/alaskadotpf-government-azure-iot">Leer el caso</a>
+            <li class="compañias">El Departamento de Transporte (DOT) de Alaska planta cara a la madre naturaleza con
+                IoT.</li>
+            <p class="descripcion_compañia">"Con WeatherCloud, hemos empoderado a nuestro personal para que sea más
+                proactivo en la lucha
+                contra las tormentas de
+                invierno".</p>
+            <p><b>Daniel Schacher, director de Mantenimiento, Departamento de Transportes y Servicios Públicos de
+                    Alaska</b></p>
+            <a class="enlaces" href="https://customers.microsoft.com/es-es/story/alaskadotpf-government-azure-iot">Leer
+                el caso</a>
 
 
-            <li class="compañias">TEXA S.p.A. ofrece a los clientes, administradores de flotas y mecánicos acceso móvil a conclusiones sobre 
-            los vehículos.</li>
-            <p class="descripcion_compañia">"Al analizar los datos de los sensores de un automóvil conectado en Microsoft Azure, los 
-            conductores pueden ver alertas sobre problemas del motor y métricas sobre el consumo de gasolina y el rendimiento de conducción, 
-            como el tiempo de inactividad. También pueden configurar su propia receta para calificar su estilo de conducción y luego profundizar
-            para detalles."</p>
+            <li class="compañias">TEXA S.p.A. ofrece a los clientes, administradores de flotas y mecánicos acceso móvil
+                a conclusiones sobre
+                los vehículos.</li>
+            <p class="descripcion_compañia">"Al analizar los datos de los sensores de un automóvil conectado en
+                Microsoft Azure, los
+                conductores pueden ver alertas sobre problemas del motor y métricas sobre el consumo de gasolina y el
+                rendimiento de conducción,
+                como el tiempo de inactividad. También pueden configurar su propia receta para calificar su estilo de
+                conducción y luego profundizar
+                para detalles."</p>
             <p><b>Riccardo Zamana, director de Servicios de nube híbrida y plataforma de IoT</b></p>
             <a class="enlaces" href="https://customers.microsoft.com/es-es/story/texaspa">Leer el caso</a>
 
 
-            <li class="compañias">Rolls-Royce ayuda a las aerolíneas a sacar el máximo partido a sus motores analizando datos de transporte 
-            inteligentes generados durante el vuelo.</li>
-            <p class="descripcion_compañia">"Vemos un valor real en colaborar con una organización que ya está liderando el camino con sus 
-            capacidades de software y análisis de datos establecidos".</p>
-            <p><b>Alex Dulewicz, jefe de Marketing para Servicios, Rolls-Royce, división de tecnología aeroespacial civil</b></p>
-            <a class="enlaces" href="https://news.microsoft.com/transform/from-airplane-engines-to-street-lights-transportation-is-becoming-more-intelligent/">Leer el caso</a>
+            <li class="compañias">Rolls-Royce ayuda a las aerolíneas a sacar el máximo partido a sus motores analizando
+                datos de transporte
+                inteligentes generados durante el vuelo.</li>
+            <p class="descripcion_compañia">"Vemos un valor real en colaborar con una organización que ya está liderando
+                el camino con sus
+                capacidades de software y análisis de datos establecidos".</p>
+            <p><b>Alex Dulewicz, jefe de Marketing para Servicios, Rolls-Royce, división de tecnología aeroespacial
+                    civil</b></p>
+            <a class="enlaces"
+                href="https://news.microsoft.com/transform/from-airplane-engines-to-street-lights-transportation-is-becoming-more-intelligent/">Leer
+                el caso</a>
 
-            
-            <li class="compañias">Maersk incorpora al transporte de contenedores servicios digitales que fortalecen la interacción con los 
-            clientes.</li>
-            <p class="descripcion_compañia">"Cuando se complementa con el código abierto, Azure da libertad a los ingenieros. Los desarrolladores 
-            de software están hartos de servidores. Quieren crear".</p>
+
+            <li class="compañias">Maersk incorpora al transporte de contenedores servicios digitales que fortalecen la
+                interacción con los
+                clientes.</li>
+            <p class="descripcion_compañia">"Cuando se complementa con el código abierto, Azure da libertad a los
+                ingenieros. Los desarrolladores
+                de software están hartos de servidores. Quieren crear".</p>
             <p><b>Rasmus Hald, jefe de Arquitectura en la nube, A.P. Moller-Maersk</b></p>
-            <a class="enlaces" href="https://customers.microsoft.com/es-es/story/maersk-travel-transportation-azure">Leer el caso</a>
+            <a class="enlaces"
+                href="https://customers.microsoft.com/es-es/story/maersk-travel-transportation-azure">Leer el caso</a>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
         </ul>
-        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/lightboxMain.js"></script>
+    <script src="js/IotTransporte.js"></script>
+</body>
 
-        <!-- <section class="imagen-light">
-            <img src="images/bx-x.svg" alt="" class="close">
-            <img src="images/logo.PNG" alt="" class="agregar-imagen">
-        </section> -->
-
-        <script src="js/IotTransporte.js"></script>
-    </body>
 </html>
