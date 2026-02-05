@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosM.css">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/icono_iomt.png">
+    <link rel="stylesheet" href="../css/estilosM.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../images/icono_iomt.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -19,13 +19,13 @@
     <!-- Header -->
     <div id="header"></div>
     <script>
-        fetch("componentes/encabezado.html")
+        fetch("../componentes/encabezado.html")
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
     </script>
     <!-- /Header -->
     <header class="header" id="inicio">
-        <img src="images/hamburguesa.svg" alt="" class="hamburguer" />
+        <img src="../images/hamburguesa.svg" alt="" class="hamburguer" />
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
             <a href="#concepto">Concepto</a>
@@ -44,7 +44,7 @@
         <section class="primeraparte" id="concepto">
             <h2 class="subtitulo"> Iot en la Medicina</h2>
             <div class="primerap">
-                <img src="images/Imagenes1.png">
+                <img src="../images/Imagenes1.png">
             </div>
             <p class="p1">
                 El Internet de las cosas (IoT) ha abierto un mundo de posibilidades en la medicina: cuando se conecta a
@@ -75,7 +75,7 @@
                 </p>
 
             </div>
-            <img src="images/Imagenes2.png">
+            <img src="../images/Imagenes2.png">
         </section>
 
         <section class="segundaparte" id="ventajasIoMT">
@@ -111,7 +111,7 @@
 
             <div class="tercerap">
                 <h3>1. Audiómetros electrónicos</h3>
-                <img src="images/Imagenes3.jpg " class="imagenes" alt="">
+                <img src="../images/Imagenes3.jpg " class="imagenes" alt="">
             </div>
             <p class="p4"> En la salud auditiva, la utilización del internet de las cosas permite detectar y tratar
                 mejor los problemas de oída. Por ejemplo, ya existen algunos audiómetros
@@ -121,7 +121,7 @@
 
             <div class="tercerap">
                 <h3>2. Monitor de glucosa</h3>
-                <img src="images/Imagenes4.jpg" class="imagenes" alt="">
+                <img src="../images/Imagenes4.jpg" class="imagenes" alt="">
             </div>
             <p class="p4"> Para los pacientes que sufren de diabetes del tipo 1 o 2, cabe la posibilidad de controlar
                 sus niveles de azúcar en sangre a través de un dispositivo
@@ -130,7 +130,7 @@
                 del estado de esos niveles.</p>
             <div class="tercerap">
                 <h3>3. Pastillas inteligentes </h3>
-                <img src="images/Imagenes5.png" class="imagenes" alt="">
+                <img src="../images/Imagenes5.png" class="imagenes" alt="">
             </div>
             <p class="p4"> Ya existen las pastillas inteligentes gracias al IoT en medicina. Píldoras como las de
                 Abilify MyCite están dirigidas a tratar ciertas enfermedades como la
@@ -145,13 +145,13 @@
                 modificaciones en el tamaño de la pupila, el iris o la retina
                 del ojo. Por otro lado, los inhaladores inteligentes son una realidad muy útil para pacientes con
                 problemas respiratorios. </p>
-            <img src="images/ultima imagen.png">
+            <img src="../images/ultima imagen.png">
         </section>
 
 
         <section class="imagen-ligth">
 
-            <img src="images/medicina2.jpg" alt="" class="imagen-inicio">
+            <img src="../images/medicina2.jpg" alt="" class="imagen-inicio">
         </section>
 
 
@@ -173,17 +173,17 @@
         <div id="footer"></div>
         <script>
             // Cargar el footer
-            fetch("componentes/footer.html")
+            fetch("../componentes/footer.html")
                 .then(response => response.text())
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
         <!-- /Footer -->
 
 
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/lightboxMain.js"></script>
-        <script src="js/iot_medicina.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/lightboxMain.js"></script>
+        <script src="../js/iot_medicina.js"></script>
 </body>
 
 </html>

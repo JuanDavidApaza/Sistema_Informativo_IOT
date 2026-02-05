@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosT.css">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/logo.PNG">
+    <link rel="stylesheet" href="../css/estilosT.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../images/logo.PNG">
     <title>IoT en el Tranporte</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"
         href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
@@ -18,13 +18,13 @@
     <!-- Header -->
     <div id="header"></div>
     <script>
-        fetch("componentes/encabezado.html")
+        fetch("../componentes/encabezado.html")
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
     </script>
     <!-- /Header -->
     <header class="header" id="inicio">
-        <img src="images/hamburguesa.svg" alt="" class="lista">
+        <img src="../images/hamburguesa.svg" alt="" class="lista">
         <nav class="lista-desplegable">
             <a href="#inicio">Inicio</a>
             <a href="#descripcion">Descripción</a>
@@ -46,7 +46,7 @@
     <div>
 
         <h2 id="descripcion">¿Cómo influye IoT en el transporte?</h2>
-        <img src="images/imagen_principal.gif" alt="IoT en el transporte" height="300" width="600">
+        <img src="../images/imagen_principal.gif" alt="IoT en el transporte" height="300" width="600">
 
 
         <p class="principal">
@@ -71,7 +71,7 @@
             <h2>
                 <li class="beneficios">Recopilación de datos</li>
             </h2>
-            <img class="imagen_derecha" src="images/imagen2.PNG" alt="Recopilación de datos">
+            <img class="imagen_derecha" src="../images/imagen2.PNG" alt="Recopilación de datos">
             <p>El Internet de las cosas (IoT) permite recopilar datos de los vehículos a través de sensores instalados,
                 de esta manera
                 se proporciona información detallada sobre el rendimiento del vehículo y el comportamiento del
@@ -86,7 +86,7 @@
             <h2>
                 <li class="beneficios">Reconocimiento automático</li>
             </h2>
-            <img class="imagen_izquierda" src="images/imagen3.PNG" alt="Reconocimiento automático">
+            <img class="imagen_izquierda" src="../images/imagen3.PNG" alt="Reconocimiento automático">
             <p>La conexión entre dispositivos, nube y plataforma permite conocer casi de manera automática el estado de
                 las rutas y las
                 posibles mejoras. Las principales preocupaciones del tráfico son la gestión de la congestión, la
@@ -101,7 +101,7 @@
             <h2>
                 <li class="beneficios">Nuevos métodos de rastreo</li>
             </h2>
-            <img class="imagen_derecha" src="images/imagen4.PNG" alt="Nuevos métodos de rastreo">
+            <img class="imagen_derecha" src="../images/imagen4.PNG" alt="Nuevos métodos de rastreo">
             <p>Con los equipos IoT podemos mantener un seguimiento de los vehículos conectados, de los cargamentos, como
                 palés,
                 paquetes y carros, y de las entregas en curso. Antes, escanear códigos de barras resultaba ser más
@@ -133,7 +133,7 @@
             <h2>
                 <li class="beneficios">Monitoreo de temperatura</li>
             </h2>
-            <img class="imagen_izquierda" src="images/imagen5.PNG" alt="Monitoreo de temperatura">
+            <img class="imagen_izquierda" src="../images/imagen5.PNG" alt="Monitoreo de temperatura">
             <p>Algunos productos requieren un estricto control de temperatura y humedad. Gracias al IoT en el
                 transporte, se pueden
                 controlar las condiciones de los productos y prevenir deterioros por alteraciones ambientales.</p>
@@ -206,16 +206,16 @@
         <div id="footer"></div>
         <script>
             // Cargar el footer
-            fetch("componentes/footer.html")
+            fetch("../componentes/footer.html")
                 .then(response => response.text())
                 .then(data => document.getElementById("footer").innerHTML = data);
         </script>
         <!-- /Footer -->
     </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/lightboxMain.js"></script>
-    <script src="js/IotTransporte.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/lightboxMain.js"></script>
+    <script src="../js/IotTransporte.js"></script>
 </body>
 
 </html>

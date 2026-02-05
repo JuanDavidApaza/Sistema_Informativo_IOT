@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IoT En la Educación</title>
-  <link rel="stylesheet" href="css/estilosE.css" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../css/estilosE.css" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet" />
 </head>
@@ -17,13 +17,13 @@
   <!-- Header -->
   <div id="header"></div>
   <script>
-    fetch("componentes/encabezado.html")
+    fetch("../componentes/encabezado.html")
       .then(response => response.text())
       .then(data => document.getElementById("header").innerHTML = data);
   </script>
   <!-- /Header -->
   <header class="header" id="inicio">
-    <img src="images/hamburguesa.svg" alt="" class="hamburguer" />
+    <img src="../images/hamburguesa.svg" alt="" class="hamburguer" />
     <nav class="menu-navegacion">
       <a href="#inicio">Inicio</a>
       <a href="#concepto">Concepto</a>
@@ -43,7 +43,7 @@
     <section class="services contenedor" id="concepto">
       <h2 class="subtitulo">¿EN QUE AYUDO EL INTERNET DE LAS COSAS?</h2>
       <div class="contenedor-servicio">
-        <img src="images/concepto.jpg" alt="" />
+        <img src="../images/concepto.jpg" alt="" />
         <div class="service imagenallado">
           <p class="parrafo">
             En el caso de este importante sector. El impacto que tendrá esta
@@ -69,18 +69,18 @@
       <div class="contenedor">
         <h2 class="subtitulo">PRUEBAS</h2>
         <div class="contenedor-galeria">
-          <img src="images/img1.jpg" alt="" class="img-galery" />
-          <img src="images/img3.jpg" alt="" class="img-galery" />
-          <img src="images/img4.jpg" alt="" class="img-galery" />
-          <img src="images/img6.jpg" alt="" class="img-galery" />
-          <img src="images/img2.jpg" alt="" class="img-galery" />
-          <img src="images/img5.jpg" alt="" class="img-galery" />
+          <img src="../images/img1.jpg" alt="" class="img-galery" />
+          <img src="../images/img3.jpg" alt="" class="img-galery" />
+          <img src="../images/img4.jpg" alt="" class="img-galery" />
+          <img src="../images/img6.jpg" alt="" class="img-galery" />
+          <img src="../images/img2.jpg" alt="" class="img-galery" />
+          <img src="../images/img5.jpg" alt="" class="img-galery" />
         </div>
       </div>
     </section>
-    <section class="imagen-ligth">
-      <img src="images/close.svg" alt="" class="close">
-      <img src="images/prins.jpg" alt="" class="agregar-imagen">
+    <section class="../imagen-ligth">
+      <img src="../images/close.svg" alt="" class="close">
+      <img src="../images/prins.jpg" alt="" class="agregar-imagen">
     </section>
     <section class="contenedor" id="casos">
       <h2 class="subtitulo">CASOS QUE MEJORARON GRACIAS AL IoT</h2>
@@ -140,18 +140,18 @@
   <div id="footer"></div>
   <script>
     // Cargar el footer
-    fetch("componentes/footer.html")
+    fetch("../componentes/footer.html")
       .then(response => response.text())
       .then(data => document.getElementById("footer").innerHTML = data);
   </script>
   <!-- /Footer -->
 
 
-  <script src="JS/menu.js"></script>
-  <script src="JS/lightbox.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/bootstrap.bundle.js"></script>
-  <script src="js/lightboxMain.js"></script>
+  <script src="../JS/menu.js"></script>
+  <script src="../JS/lightbox.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../js/lightboxMain.js"></script>
 </body>
 
 </html>
