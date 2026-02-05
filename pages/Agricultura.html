@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosA.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="shortcut icon" href="images/IoT.png" />
+    <link rel="stylesheet" href="../css/estilosA.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="shortcut icon" href="../images/IoT.png" />
     <title>Document</title>
 </head>
 
@@ -16,13 +16,13 @@
     <!-- Header -->
     <div id="header"></div>
     <script>
-        fetch("componentes/encabezado.html")
+        fetch("../componentes/encabezado.html")
             .then(response => response.text())
             .then(data => document.getElementById("header").innerHTML = data);
     </script>
     <!-- /Header -->
     <nav class="header" id="inicio">
-        <img src="images/Menu.svg" alt="" class="menu">
+        <img src="../images/Menu.svg" alt="" class="menu">
         <nav class="menu-navegacion ">
             <a href="#inicio">Inicio</a>
             <a href="#definicion">Definicion</a>
@@ -39,7 +39,7 @@
         <section class="definicion contenedor" id="definicion">
             <h2 class="subtitulo">Iot en la Agricultura</h2>
             <div class="contenedor-definicion">
-                <img src="images/Invernadero.jpg" alt="">
+                <img src="../images/Invernadero.jpg" alt="">
                 <p class="p1">
                     La <a onclick="redireccion()"> Agricultura </a> continúa siendo una de las actividades económicas
                     más importantes en un gran
@@ -74,7 +74,7 @@
                 <h3>• Acceso a indicadores clave de su operación agrícola.</h3>
 
                 <div class="contenedor-beneficios">
-                    <img src="images/ima2.jpg" alt="">
+                    <img src="../images/ima2.jpg" alt="">
 
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <h2 class="subtitulo">¿Qué soluciones de IoT en el sector de la agricultura existen actualmente?</h2>
             <h4>Invernaderos inteligentes</h4>
             <div class="image1">
-                <img src="images/invernaderos.jpg" alt="">
+                <img src="../images/invernaderos.jpg" alt="">
 
                 <p>Los invernaderos tradicionales tienen la función de crear determinados ambientes climatológicos para
                     favorecer el
@@ -118,7 +118,7 @@
 
             <h4>Monitorización y precisión</h4>
             <div class="image2">
-                <img src="images/sensores.jpg" alt="">
+                <img src="../images/sensores.jpg" alt="">
             </div>
             <p> Mediante la aplicación de IoT en el sector de la agricultura también se pueden incorporar sensores que
                 registren
@@ -141,16 +141,16 @@
     <div id="footer"></div>
     <script>
         // Cargar el footer
-        fetch("componentes/footer.html")
+        fetch("../componentes/footer.html")
             .then(response => response.text())
             .then(data => document.getElementById("footer").innerHTML = data);
     </script>
     <!-- /Footer -->
 
-    <script src="js/script.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/lightboxMain.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/lightboxMain.js"></script>
 
 </body>
 
