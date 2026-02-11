@@ -77,14 +77,11 @@ h2{
 }
 
 /*Viñetas*/
-li{
+.vinetas{
     line-height: 1.5;
     font-size:21px;
     margin: 25px 0px 5px 45px;
     color: #262626;
-    
-    
-
 }
 
 /*Subtitulo 1*/
@@ -274,7 +271,7 @@ body
     color: aliceblue;
 }
 
-header{
+.header{
     height: 100vh;
     background-image: linear-gradient(to top, rgba(48, 208, 208, 0.507) 0%, rgba(182, 131, 245, 0.507) 100%), url(../images/medicina2.jpg);
     background-repeat: no-repeat ;
